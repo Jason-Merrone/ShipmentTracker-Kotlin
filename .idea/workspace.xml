@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="36337894-0a9c-4085-b121-fa364437b127" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/CanceledUpdatePattern.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/CreatedUpdatePattern.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DelayedUpdatePattern.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DeliveredUpdatePattern.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/LocationUpdatePattern.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/LostUpdatePattern.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/NoteAddedUpdatePattern.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Shipment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ShipmentUpdateProcessor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ShippedUpdatePattern.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ShippingUpdate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ShippingUpdateStrategy.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/TrackerViewHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/TrackingSimulator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2jJI2BjfSeMwMWx5lH58LFp7TYh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build shipment-tracking-simulator.executor": "Run",
+    "Gradle.desktop.executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": []
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu\home\jason\course-assn\CS 5700\shipment-tracking-simulator" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="shippingUpdate" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="shippingUpdate" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36337894-0a9c-4085-b121-fa364437b127" name="Changes" comment="" />
+      <created>1721098547321</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721098547321</updated>
+      <workItem from="1721098548338" duration="470000" />
+      <workItem from="1721099028770" duration="20403000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
