@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36337894-0a9c-4085-b121-fa364437b127" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/CanceledUpdatePattern.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/CreatedUpdatePattern.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DelayedUpdatePattern.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DeliveredUpdatePattern.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/LocationUpdatePattern.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/LostUpdatePattern.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/NoteAddedUpdatePattern.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Shipment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ShipmentUpdateProcessor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ShippedUpdatePattern.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ShippingUpdate.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ShippingUpdateStrategy.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/TrackerViewHelper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/TrackingSimulator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kotlin/sessions/kotlin-compiler-18203425289073574633.salive" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CanceledUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/CanceledUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CreatedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/CreatedUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DelayedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/DelayedUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DeliveredUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/DeliveredUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LocationUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LocationUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LostUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LostUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/NoteAddedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/NoteAddedUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Shipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Shipment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ShipmentUpdateProcessor.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ShippedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ShippedUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ShippingUpdate.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ShippingUpdateStrategy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ShippingUpdateStrategy.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TrackingSimulator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TrackingSimulator.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721098547321</updated>
       <workItem from="1721098548338" duration="470000" />
-      <workItem from="1721099028770" duration="20403000" />
+      <workItem from="1721099028770" duration="30745000" />
     </task>
     <servers />
   </component>

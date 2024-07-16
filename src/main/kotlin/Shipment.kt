@@ -1,25 +1,41 @@
-
 class Shipment(
-    var status:String,
+    private var status:String,
     val id:String,
-    private var notes:String,
-    private var updateHistory:MutableList<ShippingUpdate>,
-    var expectedDeliverDateTimestamp:Long?,
-    var currentLocation:String?
+    val timestamp:Long,
     ){
 
+    private var notes: MutableList<String?> = mutableListOf()
+    private val updateHistory: MutableList<String> = mutableListOf("created")
+    var expectedDeliverDateTimestamp: Long? = null
+    var currentLocation:String? = null
 
-
-    fun addUpdate(update:ShippingUpdate){
-        updateHistory.add(update)
-
+    fun updateStatus(newStatus:String){
+        updateHistory.add(newStatus)
+        status = newStatus
     }
 
-    fun getNotes():String{
-        return notes
+    fun addNote(note:String?){
+        notes.add(note)
     }
 
-    fun getUpdateHistory():MutableList<ShippingUpdate>{
-        return updateHistory
+    fun getNotes():List<String?>{
+        return notes.toList()
+    }
+
+    fun getUpdateHistory():List<String>{
+        return updateHistory.toList()
+    }
+
+    fun getStatus():String{
+        return status
+    }
+
+    fun clone(): Shipment {
+        val clonedShipment = Shipment(status, id, timestamp)
+        clonedShipment.notes.addAll(this.notes)
+        clonedShipment.updateHistory.addAll(this.updateHistory)
+        clonedShipment.expectedDeliverDateTimestamp = this.expectedDeliverDateTimestamp
+        clonedShipment.currentLocation = this.currentLocation
+        return clonedShipment
     }
 }

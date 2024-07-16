@@ -1,3 +1,3 @@
 interface ShippingUpdateStrategy {
-    fun updateShipment(shipment: Shipment, timestamp: Long, otherInfo: String? = null): ShippingUpdate
+    fun updateShipment(id:String, previousStatus:String? = null, timestamp: Long, otherInfo: String? = null)
 }

@@ -3,32 +3,45 @@ import java.io.File
 
 object TrackingSimulator {
     private val shipments = mutableMapOf<String, Shipment>()
+    private val updateStrategies: Map<String, ShippingUpdateStrategy> = mapOf(
+        "created" to CreatedUpdatePattern(),
+        "shipped" to ShippedUpdatePattern(),
+        "location" to LocationUpdatePattern(),
+        "delayed" to DelayedUpdatePattern(),
+        "noteadded" to NoteAddedUpdatePattern(),
+        "lost" to LostUpdatePattern(),
+        "canceled" to CanceledUpdatePattern(),
+        "delivered" to DeliveredUpdatePattern(),
+    )
 
     fun findShipment(id: String) : Shipment? {
-        return shipments[id]
+        return shipments[id]?.clone()
     }
     fun addShipment(shipment: Shipment) {
         shipments[shipment.id] = shipment
     }
+
+    private fun processUpdate(update:String){
+        val parts = update.split(",", limit = 4)
+        val updateType = parts[0]
+        val shipmentId = parts[1]
+        val timestamp = parts[2].toLongOrNull() ?: 0L
+        val otherInfo = parts.getOrNull(3) ?: ""
+
+        val strategy = updateStrategies[updateType]
+        strategy?.updateShipment(shipmentId,findShipment(shipmentId)?.getStatus(),timestamp.toLong(),otherInfo)
+    }
+
     suspend fun runSimulation() = runBlocking{
         val fileName = "test.txt"
         val file = File(fileName)
-        val updater = ShipmentUpdateProcessor()
 
         val lines = file.readLines() // Read lines into a list
 
         for (line in lines) {
             delay(1000L)
             println(line)
-            val sections = line.split(',')
-            val updateType = sections.getOrNull(0) ?: ""
-            val shipmentId = sections.getOrNull(1) ?: ""
-            val timestampOfUpdate = sections.getOrNull(2) ?: ""
-            val otherInfo = if (sections.size > 3) sections.subList(3, sections.size).joinToString(",") else ""
-
-            if(updateType == "created"){
-
-            }
+            processUpdate(line)
         }
     }
 }
