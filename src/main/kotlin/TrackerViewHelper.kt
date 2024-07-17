@@ -59,7 +59,7 @@ class TrackerViewHelper : ShipmentObserver {
             val index = findShipmentIndex(shipment)
             if (index != -1) {
                 updateHistory[index] = shipment.getUpdateHistory()
-                expectedDeliveryDate[index] = formatTime(shipment.expectedDeliverDateTimestamp) 
+                expectedDeliveryDate[index] = formatTime(shipment.expectedDeliverDateTimestamp)
                 status[index] = shipment.getStatus()
                 location[index] = shipment.currentLocation
                 notes[index] = shipment.getNotes()

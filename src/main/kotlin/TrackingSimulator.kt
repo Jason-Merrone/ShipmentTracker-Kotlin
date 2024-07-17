@@ -36,6 +36,11 @@ object TrackingSimulator {
         val fileName = "test.txt"
         val file = File(fileName)
 
+        if (!file.exists()) {
+            println("Error: File not found: $fileName")
+            return@runBlocking
+        }
+
         val lines = file.readLines() // Read lines into a list
 
         for (line in lines) {
