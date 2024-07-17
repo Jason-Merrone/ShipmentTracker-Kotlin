@@ -14,8 +14,8 @@ object TrackingSimulator {
         "delivered" to DeliveredUpdatePattern(),
     )
 
-    fun findShipment(id: String) : Shipment? {
-        return shipments[id]?.clone()
+    fun findShipment(id: String?) : Shipment? {
+        return shipments[id]
     }
     fun addShipment(shipment: Shipment) {
         shipments[shipment.id] = shipment

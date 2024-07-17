@@ -3,7 +3,6 @@ class DelayedUpdatePattern(): ShippingUpdateStrategy {
         val shipment = TrackingSimulator.findShipment(id)
         shipment?.updateStatus("delayed")
         shipment?.expectedDeliverDateTimestamp = otherInfo?.toLong()
-        if(shipment != null)
-            TrackingSimulator.addShipment(shipment)
+        shipment?.notifyObservers()
     }
 }
