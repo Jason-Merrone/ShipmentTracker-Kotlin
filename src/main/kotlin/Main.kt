@@ -99,12 +99,11 @@ fun ShipmentCard(
             Text("Status: ${tracker.status.getOrElse(index) { "N/A" } ?: "N/A"}")
             Text("Location: ${tracker.location.getOrElse(index) { "N/A" } ?: "N/A"}")
             Text("Expected Delivery: ${tracker.expectedDeliveryDate.getOrElse(index) { "N/A" } ?: "N/A"}")
-            Text("Status Updates: ")
             val updateHistory = tracker.updateHistory.getOrElse(index) { emptyList<String>() }
             if (updateHistory.size >= 2) {
                 val lastUpdate = updateHistory[updateHistory.size - 1]
                 val secondLastUpdate = updateHistory[updateHistory.size - 2]
-                Text("Package went from $secondLastUpdate to $lastUpdate at ${tracker.timestamp.getOrElse(index) { "unknown time" } ?: "N/A"}")
+                Text("Status Updates: Package went from $secondLastUpdate to $lastUpdate at ${tracker.timestamp.getOrElse(index) { "unknown time" } ?: "N/A"}")
             }
             Text("Notes: ${tracker.notes.getOrElse(index) { "N/A" } ?: "N/A"}")
 

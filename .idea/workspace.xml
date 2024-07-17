@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36337894-0a9c-4085-b121-fa364437b127" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Shipment Tracking Simulator.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TrackingSimulator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TrackingSimulator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ShipmentTrackerTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ShipmentTrackerTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +59,9 @@
     "Gradle.Tests in 'shipment-tracking-simulator.test'.executor": "Run",
     "Gradle.desktop.executor": "Run",
     "JUnit.All in shipment-tracking-simulator.test (1).executor": "Coverage",
-    "JUnit.All in shipment-tracking-simulator.test (2).executor": "Run",
+    "JUnit.All in shipment-tracking-simulator.test (2).executor": "Coverage",
     "JUnit.All in shipment-tracking-simulator.test.executor": "Coverage",
-    "Kotlin.MainKt.executor": "Profiler#1",
+    "Kotlin.MainKt.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -86,8 +86,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="\\wsl.localhost\Ubuntu\home\jason\course-assn\CS 5700\shipment-tracking-simulator\src\main\kotlin" />
       <recent name="\\wsl.localhost\Ubuntu\home\jason\course-assn\CS 5700\shipment-tracking-simulator" />
+      <recent name="\\wsl.localhost\Ubuntu\home\jason\course-assn\CS 5700\shipment-tracking-simulator\src\main\kotlin" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="" />
@@ -97,7 +97,7 @@
       <recent name="shippingUpdate" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in shipment-tracking-simulator.test (2)">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="ShipmentTrackerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -160,21 +160,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in shipment-tracking-simulator.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shipment-tracking-simulator.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="shipment-tracking-simulator.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in shipment-tracking-simulator.test (2)" />
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.Tests in 'shipment-tracking-simulator.test'" />
+        <item itemvalue="JUnit.All in shipment-tracking-simulator.test (2)" />
         <item itemvalue="Gradle.ShipmentTrackerTests" />
         <item itemvalue="JUnit.All in shipment-tracking-simulator.test (1)" />
-        <item itemvalue="JUnit.All in shipment-tracking-simulator.test" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +204,7 @@
       <workItem from="1721183757367" duration="132000" />
       <workItem from="1721183896787" duration="287000" />
       <workItem from="1721184191937" duration="471000" />
-      <workItem from="1721184673616" duration="329000" />
+      <workItem from="1721184673616" duration="1780000" />
     </task>
     <servers />
   </component>
@@ -225,7 +224,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/shipment_tracking_simulator$All_in_shipment_tracking_simulator_test.ic" NAME="All in shipment-tracking-simulator.test Coverage Results" MODIFIED="1721183929077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/shipment_tracking_simulator$All_in_shipment_tracking_simulator_test__2_.ic" NAME="All in shipment-tracking-simulator.test (2) Coverage Results" MODIFIED="1721184703321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/shipment_tracking_simulator$All_in_shipment_tracking_simulator_test__2_.ic" NAME="All in shipment-tracking-simulator.test (2) Coverage Results" MODIFIED="1721185093384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/shipment_tracking_simulator$All_in_shipment_tracking_simulator_test__1_.ic" NAME="All in shipment-tracking-simulator.test (1) Coverage Results" MODIFIED="1721184219430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
