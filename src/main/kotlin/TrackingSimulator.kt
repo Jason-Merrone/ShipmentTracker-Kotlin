@@ -45,7 +45,6 @@ object TrackingSimulator {
 
         for (line in lines) {
             delay(1000L)
-            println(line)
             processUpdate(line)
         }
     }
