@@ -21,7 +21,7 @@ object TrackingSimulator {
         shipments[shipment.id] = shipment
     }
 
-    private fun processUpdate(update:String){
+    fun processUpdate(update:String){
         val parts = update.split(",", limit = 4)
         val updateType = parts[0]
         val shipmentId = parts[1]

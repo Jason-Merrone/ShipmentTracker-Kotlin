@@ -118,7 +118,111 @@ class ShipmentTrackerTests {
         assertEquals(shipment, retrievedShipment)
     }
 
-    // Helper function to convert timestamp to formatted date string
+    @Test
+    fun testTrackingSimulatorFindNonExistingShipment() {
+        val shipment = TrackingSimulator.findShipment("non_existing_id")
+        assertNull(shipment)
+    }
+
+    @Test
+    fun testTrackingSimulatorProcessUpdateCreated() {
+        val updateString = "created,12,1678886400000"
+        TrackingSimulator.processUpdate(updateString)
+        val shipment = TrackingSimulator.findShipment("12")
+        assertNotNull(shipment)
+        assertEquals("created", shipment?.getStatus())
+        assertEquals(1678886400000, shipment?.timestamp)
+    }
+
+    @Test
+    fun testTrackingSimulatorProcessUpdateShipped() {
+        val createdString = "created,13,1678886400000"
+        TrackingSimulator.processUpdate(createdString)
+        val expectedDelivery = Instant.now().plusMillis(100000).toEpochMilli()
+        val updateString = "shipped,13,1678896400000,$expectedDelivery"
+        TrackingSimulator.processUpdate(updateString)
+        val shipment = TrackingSimulator.findShipment("13")
+        assertNotNull(shipment)
+        assertEquals("shipped", shipment?.getStatus())
+        assertEquals(expectedDelivery, shipment?.expectedDeliverDateTimestamp)
+    }
+
+    @Test
+    fun testTrackingSimulatorProcessUpdateLocation() {
+        val createdString = "created,14,1678886400000"
+        TrackingSimulator.processUpdate(createdString)
+        val updateString = "location,14,0,Warehouse B"
+        TrackingSimulator.processUpdate(updateString)
+        val shipment = TrackingSimulator.findShipment("14")
+        assertNotNull(shipment)
+        assertEquals("Warehouse B", shipment?.currentLocation)
+    }
+
+    @Test
+    fun testTrackingSimulatorProcessUpdateDelayed() {
+        val createdString = "created,15,1678886400000"
+        TrackingSimulator.processUpdate(createdString)
+        val expectedDelivery = Instant.now().plusMillis(200000).toEpochMilli()
+        val updateString = "delayed,15,0,$expectedDelivery"
+        TrackingSimulator.processUpdate(updateString)
+        val shipment = TrackingSimulator.findShipment("15")
+        assertNotNull(shipment)
+        assertEquals("delayed", shipment?.getStatus())
+        assertEquals(expectedDelivery, shipment?.expectedDeliverDateTimestamp)
+    }
+
+    @Test
+    fun testTrackingSimulatorProcessUpdateNoteAdded() {
+        val createdString = "created,16,1678886400000"
+        TrackingSimulator.processUpdate(createdString)
+        val updateString = "noteadded,16,0,Handle with extreme care"
+        TrackingSimulator.processUpdate(updateString)
+        val shipment = TrackingSimulator.findShipment("16")
+        assertNotNull(shipment)
+        assertTrue(shipment?.getNotes()?.contains("Handle with extreme care") ?: false)
+    }
+
+    @Test
+    fun testTrackingSimulatorProcessUpdateLost() {
+        val createdString = "created,17,1678886400000"
+        TrackingSimulator.processUpdate(createdString)
+        val updateString = "lost,17,0,"
+        TrackingSimulator.processUpdate(updateString)
+        val shipment = TrackingSimulator.findShipment("17")
+        assertNotNull(shipment)
+        assertEquals("lost", shipment?.getStatus())
+    }
+
+    @Test
+    fun testTrackingSimulatorProcessUpdateCanceled() {
+        val createdString = "created,18,1678886400000"
+        TrackingSimulator.processUpdate(createdString)
+        val updateString = "canceled,18,0,"
+        TrackingSimulator.processUpdate(updateString)
+        val shipment = TrackingSimulator.findShipment("18")
+        assertNotNull(shipment)
+        assertEquals("canceled", shipment?.getStatus())
+    }
+
+    @Test
+    fun testTrackingSimulatorProcessUpdateDelivered() {
+        val createdString = "created,19,1678886400000"
+        TrackingSimulator.processUpdate(createdString)
+        val updateString = "delivered,19,1678999999999,"
+        TrackingSimulator.processUpdate(updateString)
+        val shipment = TrackingSimulator.findShipment("19")
+        assertNotNull(shipment)
+        assertEquals("delivered", shipment?.getStatus())
+    }
+
+
+    @Test
+    fun testTrackingSimulatorProcessUpdateInvalidType() {
+        val updateString = "invalidtype,20,1678886400000,extra"
+        TrackingSimulator.processUpdate(updateString)
+    }
+
+    //covert timestamp to formatted date string
     private fun formatTime(time: Long?): String {
         return if (time != null) {
             val dateTime = Instant.ofEpochMilli(time).atZone(ZoneId.systemDefault()).toLocalDateTime()
