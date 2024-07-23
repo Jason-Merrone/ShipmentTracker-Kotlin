@@ -36,7 +36,7 @@ fun App() = run {
                 )
 
                 Button(onClick = {
-                    val shipment = TrackingSimulator.findShipment(text)
+                    val shipment = Server.findShipment(text)
                     if (shipment != null && !trackedShipments.contains(shipment)) {
                         trackedShipments.add(shipment)
                         tracker.trackShipment(shipment)

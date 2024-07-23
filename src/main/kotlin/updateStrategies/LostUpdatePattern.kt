@@ -1,10 +1,8 @@
 package updateStrategies
 
-import TrackingSimulator
-
 class LostUpdatePattern(): ShippingUpdateStrategy {
     override fun updateShipment(id: String, previousStatus: String?, timestamp: Long, otherInfo: String?) {
-        val shipment = TrackingSimulator.findShipment(id)
+        val shipment = Server.findShipment(id)
         shipment?.updateStatus("lost")
         shipment?.notifyObservers()
     }
