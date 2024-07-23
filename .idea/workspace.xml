@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36337894-0a9c-4085-b121-fa364437b127" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Shipment Tracking Simulator.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Server.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CanceledUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CanceledUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CreatedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CreatedUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DelayedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/DelayedUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DeliveredUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/DeliveredUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LocationUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/LocationUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LostUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/LostUpdatePattern.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/NoteAddedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/NoteAddedUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ShippedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/ShippedUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ShippingUpdateStrategy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/ShippingUpdateStrategy.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TrackingSimulator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TrackingSimulator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ShipmentTrackerTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ShipmentTrackerTests.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +32,39 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shipment-tracking-simulator" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shipment-tracking-simulator" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Class" />
+        <option value="Kotlin Object" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,7 +91,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build ShipmentTrackerSim-Kotlin.executor": "Run",
     "Gradle.Build shipment-tracking-simulator.executor": "Run",
     "Gradle.ShipmentTrackerTests.executor": "Run",
     "Gradle.ShippingUpdatesTest.executor": "Run",
@@ -69,6 +111,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/jason/course-assn/CS 5700/ShipmentTrackerSim-Kotlin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -90,6 +133,7 @@
       <recent name="\\wsl.localhost\Ubuntu\home\jason\course-assn\CS 5700\shipment-tracking-simulator\src\main\kotlin" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="updateStrategies" />
       <recent name="" />
       <recent name="shippingUpdate" />
     </key>
@@ -205,6 +249,8 @@
       <workItem from="1721183896787" duration="287000" />
       <workItem from="1721184191937" duration="471000" />
       <workItem from="1721184673616" duration="1780000" />
+      <workItem from="1721765854591" duration="615000" />
+      <workItem from="1721766483763" duration="1897000" />
     </task>
     <servers />
   </component>

@@ -16,7 +16,8 @@ import kotlinx.coroutines.launch
 @Composable
 @Preview
 fun App() = run {
-    val sim = remember { TrackingSimulator }
+//    val sim = remember { TrackingSimulator }
+    val server = remember { Server }
     val coroutineScope = rememberCoroutineScope()
     var text by remember { mutableStateOf("") }
     val trackedShipments = remember { mutableStateListOf<Shipment>() }
@@ -76,7 +77,7 @@ fun App() = run {
 
     LaunchedEffect(Unit) {
         coroutineScope.launch(Dispatchers.IO) {
-            sim.runSimulation()
+            server.runServer()
         }
     }
 }

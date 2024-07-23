@@ -1,8 +1,11 @@
-class DelayedUpdatePattern(): ShippingUpdateStrategy {
+package updateStrategies
+
+import TrackingSimulator
+
+class LocationUpdatePattern(): ShippingUpdateStrategy {
     override fun updateShipment(id: String, previousStatus: String?, timestamp: Long, otherInfo: String?) {
         val shipment = TrackingSimulator.findShipment(id)
-        shipment?.updateStatus("delayed")
-        shipment?.expectedDeliverDateTimestamp = otherInfo?.toLong()
+        shipment?.currentLocation = otherInfo
         shipment?.notifyObservers()
     }
 }
