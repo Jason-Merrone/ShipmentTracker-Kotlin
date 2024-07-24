@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script type="text/javascript">
-        function updateShipment(){
-            fetch("/data", {
+        async function updateShipment() {
+            const response = await fetch("/data", {
                 method: "post",
                 body: document.getElementById("input").value
             });
+            const result = await response.text();
+            alert(result);
             document.getElementById("input").value = "";
         }
     </script>
 </head>
 <body>
-    <h1>Package Manager</h1>
-    <div>
-        <input type="text" id="input">
-        <button onClick="updateShipment()">
-            Update shipmentFactory.Shipment
-        </button>
-    </div>
-
+<h1>Package Manager</h1>
+<div>
+    <input type="text" id="input">
+    <button onClick="updateShipment()">
+        Update shipmentFactory.Shipment
+    </button>
+</div>
+<h4>Note: invalid shipment types will be defaulted to standard</h4>
 </body>
 </html>

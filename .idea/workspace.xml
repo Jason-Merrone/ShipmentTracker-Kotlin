@@ -5,27 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36337894-0a9c-4085-b121-fa364437b127" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/BulkShipment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/ExpressShipment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/OvernightShipment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/ShipmentFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/StandardShipment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Server.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ShipmentManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Shipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/Shipment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ShipmentObserver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ShipmentObserver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TrackerViewHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TrackerViewHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CanceledUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CanceledUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ShipmentManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ShipmentManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/BulkShipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/BulkShipment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/ExpressShipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/ExpressShipment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/OvernightShipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/OvernightShipment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CreatedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CreatedUpdatePattern.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/DelayedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/DelayedUpdatePattern.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/DeliveredUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/DeliveredUpdatePattern.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/LocationUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/LocationUpdatePattern.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/LostUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/LostUpdatePattern.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/NoteAddedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/NoteAddedUpdatePattern.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/ShippedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/ShippedUpdatePattern.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ShipmentTrackerTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ShipmentTrackerTests.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +99,7 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "f3633184",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "//wsl.localhost/Ubuntu/home/jason/course-assn/CS 5700/ShipmentTrackerSim-Kotlin",

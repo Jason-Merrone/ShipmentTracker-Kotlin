@@ -8,10 +8,9 @@ class BulkShipment(
     id:String,
     timestamp:Long,
 ): Shipment(status,id,timestamp) {
-
     override fun updateExpectedDeliveryDate(date: Long?) {
-        if (date != null && abs(date - dateCreated) < oneDayInMillis*3) {
-            NoteAddedUpdatePattern().updateShipment(id,status,timestamp,"Shipment expected sooner than the required 3 days waiting for bulk shipments")
+        if (date != null && date - dateCreated <= 259200000 && status != "delayed") {
+            NoteAddedUpdatePattern().updateShipment(id,status,timestamp,"Shipment is expected earlier than the required delay period of 3 days for bulk shipments")
         }
         expectedDeliverDateTimestamp = date;
     }

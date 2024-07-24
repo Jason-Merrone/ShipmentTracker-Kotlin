@@ -9,7 +9,6 @@ abstract class Shipment(
     val timestamp:Long,
     ): ShipmentSubject {
         protected val dateCreated:Long = timestamp
-        protected val oneDayInMillis = 24 * 60 * 60 * 1000L // Calculate milliseconds in 3 days
 
         private var notes: MutableList<String?> = mutableListOf()
         private val updateHistory: MutableList<String> = mutableListOf("created")

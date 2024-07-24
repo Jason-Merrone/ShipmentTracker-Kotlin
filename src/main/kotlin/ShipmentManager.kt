@@ -30,27 +30,39 @@ object ShipmentManager {
         shipment.notifyObservers()
     }
 
-    private fun processUpdate(update:String){
-        val parts = update.split(",", limit = 5)
+    private fun processUpdate(update: String): Pair<String, HttpStatusCode> {
+        val parts = update.split(",", limit = 4)
+        if (parts.size < 3) {
+            return "Error: Too few parameters. Expected format: <updateType>,<shipmentId>,<timestamp>,<otherInfo>" to HttpStatusCode.BadRequest
+        }
+
         val updateType = parts[0]
         val shipmentId = parts[1]
-        val timestamp = parts[3].toLongOrNull() ?: 0L
-        val otherInfo = parts.getOrNull(4) ?: ""
+        val timestamp = parts[2].toLongOrNull() ?: return "Error: Invalid timestamp format" to HttpStatusCode.BadRequest
+        val otherInfo = parts.getOrNull(3)
 
-        val strategy = updateStrategies[updateType]
-        strategy?.updateShipment(shipmentId,findShipment(shipmentId)?.retrieveStatus(),timestamp.toLong(),otherInfo)
+        val strategy = updateStrategies[updateType] ?: return "Error: Invalid update type" to HttpStatusCode.BadRequest
+
+        if(findShipment(shipmentId) != null && updateType == "created") {
+            return "Error: Duplicate ID" to HttpStatusCode.BadRequest
+        }
+
+        val shipment = findShipment(shipmentId)
+
+        strategy.updateShipment(shipmentId, shipment?.retrieveStatus(), timestamp, otherInfo)
+        return "Success" to HttpStatusCode.OK
     }
 
-    fun runServer(){
+    fun runServer() {
         embeddedServer(Netty, 8080) {
             routing {
                 get("/") {
                     call.respondText(File("index.html").readText(), ContentType.Text.Html)
                 }
-                post("/data"){
+                post("/data") {
                     val data = call.receiveText()
-                    processUpdate(data)
-                    call.respondText {"Success"}
+                    val (result, status) = processUpdate(data)
+                    call.respondText(result, ContentType.Text.Plain, status)
                 }
             }
         }.start(wait = true)
