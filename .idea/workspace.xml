@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="36337894-0a9c-4085-b121-fa364437b127" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipment Tracking Simulator.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Shipment Tracking Simulator.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ShipmentManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ShipmentManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/BulkShipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/BulkShipment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/ExpressShipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/ExpressShipment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/OvernightShipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/OvernightShipment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CreatedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CreatedUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ShipmentTrackerTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ShipmentTrackerTests.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,46 +77,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Build ShipmentTrackerSim-Kotlin.executor": "Run",
-    "Gradle.Build shipment-tracking-simulator.executor": "Run",
-    "Gradle.ShipmentTrackerTests.executor": "Run",
-    "Gradle.ShippingUpdatesTest.executor": "Run",
-    "Gradle.ShippingUpdatesTest.testShipment.executor": "Run",
-    "Gradle.Tests in 'shipment-tracking-simulator.test'.executor": "Run",
-    "Gradle.desktop.executor": "Run",
-    "JUnit.All in shipment-tracking-simulator.test (1).executor": "Coverage",
-    "JUnit.All in shipment-tracking-simulator.test (2).executor": "Coverage",
-    "JUnit.All in shipment-tracking-simulator.test.executor": "Coverage",
-    "Kotlin.MainKt.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "f3633184",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/jason/course-assn/CS 5700/ShipmentTrackerSim-Kotlin",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "coverage",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Build ShipmentTrackerSim-Kotlin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build shipment-tracking-simulator.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ShipmentTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ShipmentTrackerTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ShippingUpdatesTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ShippingUpdatesTest.testShipment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'shipment-tracking-simulator.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.desktop.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in shipment-tracking-simulator.test (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in shipment-tracking-simulator.test (2).executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in shipment-tracking-simulator.test.executor&quot;: &quot;Coverage&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl.localhost/Ubuntu/home/jason/course-assn/CS 5700/ShipmentTrackerSim-Kotlin&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;coverage&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": []
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: []
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu\home\jason\course-assn\CS 5700\ShipmentTrackerSim-Kotlin" />
       <recent name="\\wsl.localhost\Ubuntu\home\jason\course-assn\CS 5700\shipment-tracking-simulator" />
       <recent name="\\wsl.localhost\Ubuntu\home\jason\course-assn\CS 5700\shipment-tracking-simulator\src\main\kotlin" />
     </key>
@@ -134,6 +133,30 @@
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt">
+    <configuration name="ShipmentTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;shipmentFactory.ShipmentTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="ShipmentTrackerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -180,14 +203,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="All in shipment-tracking-simulator.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shipment-tracking-simulator.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in shipment-tracking-simulator.test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shipment-tracking-simulator.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -203,13 +218,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.ShipmentTests" />
         <item itemvalue="Gradle.Tests in 'shipment-tracking-simulator.test'" />
         <item itemvalue="JUnit.All in shipment-tracking-simulator.test (2)" />
         <item itemvalue="Gradle.ShipmentTrackerTests" />
-        <item itemvalue="JUnit.All in shipment-tracking-simulator.test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -243,6 +269,9 @@
       <workItem from="1721184673616" duration="1780000" />
       <workItem from="1721765854591" duration="615000" />
       <workItem from="1721766483763" duration="12520000" />
+      <workItem from="1721789016790" duration="56000" />
+      <workItem from="1721789078152" duration="3539000" />
+      <workItem from="1721792665973" duration="4777000" />
     </task>
     <servers />
   </component>

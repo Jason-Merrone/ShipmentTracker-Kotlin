@@ -30,7 +30,7 @@ object ShipmentManager {
         shipment.notifyObservers()
     }
 
-    private fun processUpdate(update: String): Pair<String, HttpStatusCode> {
+    fun processUpdate(update: String): Pair<String, HttpStatusCode> {
         val parts = update.split(",", limit = 4)
         if (parts.size < 3) {
             return "Error: Too few parameters. Expected format: <updateType>,<shipmentId>,<timestamp>,<otherInfo>" to HttpStatusCode.BadRequest
