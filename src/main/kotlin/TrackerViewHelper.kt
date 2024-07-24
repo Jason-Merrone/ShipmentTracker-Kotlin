@@ -1,4 +1,5 @@
 import androidx.compose.runtime.mutableStateListOf
+import shipmentFactory.Shipment
 import java.time.Instant
 import java.time.LocalDateTime
 import java.time.ZoneId
@@ -32,7 +33,7 @@ class TrackerViewHelper : ShipmentObserver {
         if (!shipmentIds.contains(shipment.id)) {
             updateHistory.add(shipment.getUpdateHistory())
             expectedDeliveryDate.add(formatTime(shipment.expectedDeliverDateTimestamp))
-            status.add(shipment.getStatus())
+            status.add(shipment.retrieveStatus())
             location.add(shipment.currentLocation)
             notes.add(shipment.getNotes())
             shipmentIds.add(shipment.id)
@@ -60,7 +61,7 @@ class TrackerViewHelper : ShipmentObserver {
             if (index != -1) {
                 updateHistory[index] = shipment.getUpdateHistory()
                 expectedDeliveryDate[index] = formatTime(shipment.expectedDeliverDateTimestamp)
-                status[index] = shipment.getStatus()
+                status[index] = shipment.retrieveStatus()
                 location[index] = shipment.currentLocation
                 notes[index] = shipment.getNotes()
                 timestamp[index] = LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM))

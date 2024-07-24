@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
+import shipmentFactory.Shipment
 import updateStrategies.*
 import java.time.Instant
 import java.time.ZoneId

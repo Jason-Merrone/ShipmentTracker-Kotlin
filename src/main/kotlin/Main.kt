@@ -11,13 +11,13 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import shipmentFactory.Shipment
 
 
 @Composable
 @Preview
 fun App() = run {
-//    val sim = remember { TrackingSimulator }
-    val server = remember { Server }
+    val server = remember { ShipmentManager }
     val coroutineScope = rememberCoroutineScope()
     var text by remember { mutableStateOf("") }
     val trackedShipments = remember { mutableStateListOf<Shipment>() }
@@ -36,7 +36,7 @@ fun App() = run {
                 )
 
                 Button(onClick = {
-                    val shipment = Server.findShipment(text)
+                    val shipment = ShipmentManager.findShipment(text)
                     if (shipment != null && !trackedShipments.contains(shipment)) {
                         trackedShipments.add(shipment)
                         tracker.trackShipment(shipment)

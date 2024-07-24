@@ -5,10 +5,11 @@ import io.ktor.http.*
 import io.ktor.server.response.*
 import io.ktor.server.engine.*
 import io.ktor.server.request.*
+import shipmentFactory.Shipment
 import updateStrategies.*
 import java.io.File
 
-object Server {
+object ShipmentManager {
     private val shipments = mutableMapOf<String, Shipment>()
     private val updateStrategies: Map<String, ShippingUpdateStrategy> = mapOf(
         "created" to CreatedUpdatePattern(),
@@ -26,17 +27,18 @@ object Server {
     }
     fun addShipment(shipment: Shipment) {
         shipments[shipment.id] = shipment
+        shipment.notifyObservers()
     }
 
     private fun processUpdate(update:String){
-        val parts = update.split(",", limit = 4)
+        val parts = update.split(",", limit = 5)
         val updateType = parts[0]
         val shipmentId = parts[1]
-        val timestamp = parts[2].toLongOrNull() ?: 0L
-        val otherInfo = parts.getOrNull(3) ?: ""
+        val timestamp = parts[3].toLongOrNull() ?: 0L
+        val otherInfo = parts.getOrNull(4) ?: ""
 
         val strategy = updateStrategies[updateType]
-        strategy?.updateShipment(shipmentId,findShipment(shipmentId)?.getStatus(),timestamp.toLong(),otherInfo)
+        strategy?.updateShipment(shipmentId,findShipment(shipmentId)?.retrieveStatus(),timestamp.toLong(),otherInfo)
     }
 
     fun runServer(){

@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36337894-0a9c-4085-b121-fa364437b127" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/BulkShipment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/ExpressShipment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/OvernightShipment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/ShipmentFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/StandardShipment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Server.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Server.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TrackingSimulator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TrackingSimulator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Server.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ShipmentManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Shipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/shipmentFactory/Shipment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ShipmentObserver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ShipmentObserver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TrackerViewHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TrackerViewHelper.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CanceledUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CanceledUpdatePattern.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CreatedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/CreatedUpdatePattern.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/DelayedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/DelayedUpdatePattern.kt" afterDir="false" />
@@ -18,6 +25,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/LostUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/LostUpdatePattern.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/NoteAddedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/NoteAddedUpdatePattern.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/ShippedUpdatePattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/updateStrategies/ShippedUpdatePattern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ShipmentTrackerTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ShipmentTrackerTests.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +66,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Class" />
         <option value="Kotlin Object" />
         <option value="HTML File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -130,6 +138,7 @@
       <recent name="\\wsl.localhost\Ubuntu\home\jason\course-assn\CS 5700\shipment-tracking-simulator\src\main\kotlin" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="shipmentFactory" />
       <recent name="updateStrategies" />
       <recent name="" />
       <recent name="shippingUpdate" />
@@ -247,7 +256,7 @@
       <workItem from="1721184191937" duration="471000" />
       <workItem from="1721184673616" duration="1780000" />
       <workItem from="1721765854591" duration="615000" />
-      <workItem from="1721766483763" duration="3460000" />
+      <workItem from="1721766483763" duration="12520000" />
     </task>
     <servers />
   </component>
